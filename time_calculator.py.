@@ -1,0 +1,57 @@
+def add_time(start, duration, day=False):
+    # --- 1. DÉCOUPAGE ---
+    jours = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    parties_start = start.split()
+    periode = parties_start[1]
+    heures_start, minutes_start = map(int, parties_start[0].split(':'))
+    heures_duree, minutes_duree = map(int, duration.split(':'))
+
+    # --- 2. CALCULS ---
+    # Conversion 24h
+    heure_start_24h = heures_start
+    if periode == 'PM' and heures_start != 12:
+        heure_start_24h = heures_start + 12
+    elif periode == 'AM' and heures_start == 12:
+        heure_start_24h = 0
+
+    # Calcul des minutes et des heures
+    total_minutes_brutes = minutes_start + minutes_duree
+    minutes_finales = total_minutes_brutes % 60
+    heures_supplementaires_via_minutes = total_minutes_brutes // 60
+    total_heures_brutes = heure_start_24h + heures_duree + heures_supplementaires_via_minutes
+    
+    # Calcul des jours et de l'heure finale
+    jours_passes = total_heures_brutes // 24
+    heure_finale_24h = total_heures_brutes % 24
+
+    # --- 3. FORMATAGE FINAL (La partie corrigée) ---
+    
+    # On détermine la période finale
+    periode_finale = 'AM'
+    if heure_finale_24h >= 12:
+        periode_finale = 'PM'
+
+    # On convertit en heure 12h
+    heure_finale_12h = heure_finale_24h % 12
+    if heure_finale_12h == 0:
+        heure_finale_12h = 12
+
+    # On construit la base
+    temps_final = f"{heure_finale_12h}:{str(minutes_finales).zfill(2)} {periode_finale}"
+
+    # On ajoute le jour (avec la virgule ET l'espace)
+    if day:
+        jour_normalise = day.capitalize()
+        jour_depart_index = jours.index(jour_normalise)
+        jour_final_index = (jour_depart_index + jours_passes) % 7
+        jour_final_nom = jours[jour_final_index]
+        temps_final += f", {jour_final_nom}"
+
+    # On ajoute le texte des jours passés (avec le bon format)
+    if jours_passes == 1:
+        temps_final += " (next day)" # On ajoute l'espace et les parenthèses
+    elif jours_passes > 1:
+        temps_final += f" ({jours_passes} days later)" # On enlève l'espace en trop
+
+    # --- 4. LE RETOUR ---
+    return temps_final
