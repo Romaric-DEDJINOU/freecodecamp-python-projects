@@ -31,7 +31,16 @@ Ce deuxième projet consiste à créer une fonction qui calcule une heure future
 ➡️ **[Voir le code du Time Calculator](https://github.com/Romaric-DEDJINOU/freecodecamp-python-projects/blob/main/time_calculator.py)**
 
 ## 3. Budget App
-*(À venir...)*
+
+Ce projet a été une introduction intense à la **Programmation Orientée Objet (POO)**. L'objectif était de créer une classe `Category` pour gérer des transactions budgétaires (dépôts, retraits, transferts). Le projet s'est conclu par la création d'une fonction pour visualiser les dépenses sous forme de graphique en barres.
+
+### ✅ Compétences démontrées :
+
+*   **Programmation Orientée Objet (POO) :** Création de classes, utilisation de `__init__` et `self`, définition de méthodes d'instance.
+*   **Structures de Données :** Manipulation de listes de dictionnaires pour gérer un registre de transactions.
+*   **Logique de Formatage de Chaînes :** Construction d'affichages textuels complexes et alignés.
+
+➡️ **[Voir le code du Budget App](https://github.com/Romaric-DEDJINOU/freecodecamp-python-projects/blob/main/budget_app.py)**
 
 ## 4. Polygon Area Calculator
 *(À venir...)*
