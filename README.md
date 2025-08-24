@@ -43,7 +43,17 @@ Ce projet a été une introduction intense à la **Programmation Orientée Objet
 ➡️ **[Voir le code du Budget App](https://github.com/Romaric-DEDJINOU/freecodecamp-python-projects/blob/main/budget_app.py)**
 
 ## 4. Polygon Area Calculator
-*(À venir...)*
+
+Ce projet est une immersion profonde dans les concepts de la **Programmation Orientée Objet (POO)**, notamment l'héritage. L'objectif était de créer une classe `Rectangle` puis une classe `Square` qui en hérite, tout en s'assurant que les objets conservent une logique géométrique cohérente.
+
+### ✅ Compétences démontrées :
+
+*   **Programmation Orientée Objet (POO) :** Maîtrise de la création de classes, des attributs et des méthodes.
+*   **Héritage (`Inheritance`) :** Implémentation d'une classe enfant (`Square`) qui hérite d'une classe parent (`Rectangle`).
+*   **Surcharge de Méthodes (`Method Overriding`) :** Redéfinition des méthodes du parent (`set_width`, `__str__`) pour adapter le comportement de l'enfant.
+*   **Logique Géométrique :** Traduction de concepts mathématiques (aire, périmètre, diagonale) en code fonctionnel.
+
+➡️ **[Voir le code du Polygon Area Calculator](https://github.com/Romaric-DEDJINOU/freecodecamp-python-projects/blob/main/polygon_area_calculator.py)**
 
 ## 5. Probability Calculator
 *(À venir...)*
