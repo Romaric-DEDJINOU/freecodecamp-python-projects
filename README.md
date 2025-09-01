@@ -56,4 +56,14 @@ Ce projet est une immersion profonde dans les concepts de la **Programmation Ori
 ➡️ **[Voir le code du Polygon Area Calculator](https://github.com/Romaric-DEDJINOU/freecodecamp-python-projects/blob/main/polygon_area_calculator.py)**
 
 ## 5. Probability Calculator
-*(À venir...)*
+
+Ce projet final est une synthèse des compétences acquises, mêlant la **Programmation Orientée Objet (POO)** et la **logique algorithmique** pour créer une simulation de probabilités. L'objectif était de modéliser un "chapeau" contenant des billes et de calculer la probabilité d'un tirage spécifique en répétant l'expérience des milliers de fois.
+
+### ✅ Compétences démontrées :
+
+*   **Simulation & Probabilités :** Conception d'un algorithme pour mener une expérience de Monte-Carlo.
+*   **POO Avancée :** Utilisation de `__init__` avec des arguments variables (`**kwargs`) et manipulation d'objets.
+*   **Bibliothèques Standards :** Utilisation des modules `random` pour le hasard et `copy` pour des simulations propres.
+*   **Algorithmique :** Implémentation d'une logique de comptage et de comparaison complexe.
+
+➡️ **[Voir le code du Probability Calculator](https://github.com/Romaric-DEDJINOU/freecodecamp-python-projects/blob/main/probability_calculator.py)**
