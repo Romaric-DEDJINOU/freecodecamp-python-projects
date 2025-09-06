@@ -1,6 +1,6 @@
 # Projets de la Certification "Scientific Computing with Python" de freeCodeCamp
 
-Bienvenue dans mon atelier ! Ce repository contient les 5 projets que je réalise pour obtenir la certification de freeCodeCamp. Chaque projet représente un défi de logique, d'algorithmique et de résolution de problèmes en Python.
+Bienvenue dans mon atelier ! Ce repository contient les 5 projets que j'ai réalisé pour obtenir la certification de freeCodeCamp. Chaque projet représente un défi de logique, d'algorithmique et de résolution de problèmes en Python.
 
 ---
 
